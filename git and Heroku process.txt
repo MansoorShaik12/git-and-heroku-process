@@ -29,5 +29,5 @@ npm run build
 cd ..
 
 git add .
-git commit -m "Rebuild React app and update server to serve static files"
+git commit -m "Some Changes"
 git push heroku master
