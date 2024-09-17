@@ -1,0 +1,33 @@
+git and Heroku process:
+
+GIT-
+git init
+git add .
+git commit -m "Initial commit with frontend and backend"
+git remote add origin https://github.com/your-username/your-repo.git
+git push -u origin master
+
+
+HEROKU-
+heroku create my-app-name
+heroku buildpacks:set heroku/nodejs
+git push heroku master
+heroku open
+
+
+
+If your app uses any environment variables, set them using:
+heroku config:set VARIABLE_NAME=value
+
+
+
+updating heroku after changes:
+
+cd client
+Remove-Item -Recurse -Force build
+npm run build
+cd ..
+
+git add .
+git commit -m "Rebuild React app and update server to serve static files"
+git push heroku master
