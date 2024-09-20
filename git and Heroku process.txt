@@ -7,7 +7,6 @@ git commit -m "Initial commit with frontend and backend"
 git remote add origin https://github.com/your-username/your-repo.git
 git push -u origin master
 
-
 HEROKU-
 heroku create my-app-name
 heroku buildpacks:set heroku/nodejs
@@ -19,7 +18,8 @@ heroku open
 If your app uses any environment variables, set them using:
 heroku config:set VARIABLE_NAME=value
 
-
+if you want to match the working repo with git repo (going to last commit back in working repo)-
+git reset --hard HEAD
 
 updating heroku after changes:
 
