@@ -31,3 +31,22 @@ cd ..
 git add .
 git commit -m "Some Changes"
 git push heroku master
+
+
+
+<-----  Ensure Credentials Are Cleared    ------>
+
+Clear GitHub credentials from your system again to force Git to prompt for the correct ones.
+Clear Saved Credentials on Windows
+Open Credential Manager:
+Press Win + S, type Credential Manager, and open it.
+Go to the Windows Credentials tab.
+Find any entry starting with github.com.
+Select it and click Remove.
+
+Clear Git’s Cached Credentials:
+Run this command in the terminal:
+git credential-cache exit
+<----- //  ------>
+
+
